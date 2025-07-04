@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Délices du coin</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="top-banner">
+        Livraison le jour même de la commande ! Économisez votre temps de patience pour une meilleure dégustation !
+        🌟Achetez maintenant🌟
+    </div>
+
+    <header class="header">
+        <div class="header-container">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="logo.png" alt="Délices du coin" />
+                <span>Délices du coin</span>
+            </div>
+
+            <!-- Menu principal -->
+            <nav class="nav-menu">
+                <a href="index.html">MAISON</a>
+                <div class="dropdown">
+                    <a href="nos_gateaux.html">MENU ▼</a>
+                    <div class="dropdown-content">
+                        <a href="nos_gateaux.html#gateaux-chocolat">Gâteaux au chocolat</a>
+                        <a href="nos_gateaux.html#gateaux-fromage">Gâteaux au fromage</a>
+                        <a href="nos_gateaux.html#gateaux-fruits">Gâteaux aux fruits</a>
+                        <a href="nos_gateaux.html#gateaux-sans-gluten">Gâteaux sans gluten</a>
+                        <a href="nos_gateaux.html#cupcakes">Cupcakes</a>
+                        <a href="nos_gateaux.html#gateaux-personnalises">Gâteaux personnalisés</a>
+                    </div>
+                </div>
+                <a href="avis.html">AVIS CLIENT</a>
+            </nav>
+
+            <!-- Menu compact mobile -->
+            <div class="mobile-dropdown" id="mobileDropdown">
+                <button class="dropdown-button">☰</button>
+                <div class="dropdown-content-mobile">
+                    <a href="index.html">MAISON</a>
+                    <a href="nos_gateaux.html">MENU</a>
+                    <a href="avis.html">AVIS CLIENT</a>
+                    <a href="contact.html">CONTACT</a>
+                </div>
+            </div>
+
+            <!-- Icônes -->
+            <div class="icons">
+                <a href="contact.html" class="icon" title="Mon compte">👤</a>
+
+                <form class="search-form" action="nos_gateaux.html" method="get">
+                    <input type="text" name="q" class="search-input" placeholder="Rechercher un gâteau..." />
+                    <button type="submit" class="icon">🔍</button>
+                </form>
+
+                <a href="panier.html" class="icon" title="Mon panier">🛒</a>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="main-content">
+        <div class="image-section">
+            <img src="image1.jpeg" alt="Photo de gâteau" class="cake-image" />
+            <h2>Gateau livré avec SOIN</h2>
+        </div>
+        <div class="text-section">
+            <h1>Faites votre choix et nous rendrons la livraison agréable et rapide !</h1>
+            <p>Nous savons à quel point il est important pour vous de vous assurer que les GÂTEAUX seront livrés en
+                toute sécurité à vos proches.</p>
+            <a href="#" class="cta-button">ACHETEZ MAINTENANT ET PROFITEZ DE NOS DÉLICIEUX GÂTEAUX TENDRES ET
+                AMOUREUX</a>
+        </div>
+    </main>
+
+    <!-- Phrase avant les gâteaux -->
+    <section class="cakes-intro">
+        <p>🍰 Petit aperçu des gâteaux en stock déjà livrés. 🍰</p>
+    </section>
+
+    <!-- Section Gâteaux -->
+    <section class="cakes-section">
+        <!-- 1 -->
+        <div class="cake-card">
+            <img src="carrousel.jpeg" alt="Carrousel de gâteaux">
+            <h3>Carrousel de gâteaux au fromage</h3>
+            <p>TLC — <span class="price">11 376 FCFA</span></p>
+            <button>OPTIONS D'AFFICHAGE</button>
+        </div>
+
+        <!-- 2 -->
+        <div class="cake-card">
+            <img src="trio.jpeg" alt="Gâteau Trio">
+            <h3>Gâteau Trio</h3>
+            <p>— <span class="price">11 160 FCFA</span></p>
+            <button>OPTIONS D'AFFICHAGE</button>
+        </div>
+
+        <!-- 3 -->
+        <div class="cake-card">
+            <img src="brulé.jpeg" alt="Gâteau basque">
+            <h3>Gâteau au fromage brûlé basque</h3>
+            <p>— <span class="price">10 728 FCFA</span></p>
+            <button>OPTIONS D'AFFICHAGE</button>
+        </div>
+
+        <!-- 4 -->
+        <div class="cake-card">
+            <img src="red.jpeg" alt="Gâteau Red Velvet">
+            <h3>Red Velvet</h3>
+            <p>— <span class="price">11 448 FCFA</span></p>
+            <button>OPTIONS D'AFFICHAGE</button>
+        </div>
+
+        <!-- 5 -->
+        <div class="cake-card">
+            <img src="choco.jpeg" alt="Gâteau au chocolat fondant">
+            <h3>Chocolat Fondant</h3>
+            <p>— <span class="price">11 880 FCFA</span></p>
+            <button>OPTIONS D'AFFICHAGE</button>
+        </div>
+
+        <!-- 6 -->
+        <div class="cake-card">
+            <img src="framboise.jpeg" alt="Cheesecake Framboise">
+            <h3>Cheesecake Framboise</h3>
+            <p>— <span class="price">10 944 FCFA</span></p>
+            <button>OPTIONS D'AFFICHAGE</button>
+        </div>
+
+        <!-- 7 -->
+        <div class="cake-card">
+            <img src="tiramisu.jpeg" alt="Gâteau Tiramisu">
+            <h3>Tiramisu</h3>
+            <p>— <span class="price">11 376 FCFA</span></p>
+            <button>OPTIONS D'AFFICHAGE</button>
+        </div>
+
+        <!-- 8 -->
+        <div class="cake-card">
+            <img src="fruit.jpeg" alt="Gâteau Fruits Tropicaux">
+            <h3>Fruits Tropicaux</h3>
+            <p>— <span class="price">10 728 FCFA</span></p>
+            <button>OPTIONS D'AFFICHAGE</button>
+        </div>
+
+        <!-- 9 -->
+        <div class="cake-card">
+            <img src="cupca.jpeg" alt="Cupcakes assortis">
+            <h3>Cupcakes Assortis</h3>
+            <p>— <span class="price">9 288 FCFA</span></p>
+            <button>OPTIONS D'AFFICHAGE</button>
+        </div>
+
+        <!-- 10 -->
+        <div class="cake-card">
+            <img src="opera.jpeg" alt="Gâteau Opéra">
+            <h3>Gâteau Opéra</h3>
+            <p>— <span class="price">11 664 FCFA</span></p>
+            <button>OPTIONS D'AFFICHAGE</button>
+        </div>
+
+        <!-- 11 -->
+        <div class="cake-card">
+            <img src="citron.jpeg" alt="Tarte Citron Meringuée">
+            <h3>Tarte Citron Meringuée</h3>
+            <p>— <span class="price">10 584 FCFA</span></p>
+            <button>OPTIONS D'AFFICHAGE</button>
+        </div>
+
+        <!-- 12 -->
+        <div class="cake-card">
+            <img src="foret.jpeg" alt="Forêt Noire">
+            <h3>Forêt Noire</h3>
+            <p>— <span class="price">11 448 FCFA</span></p>
+            <button>OPTIONS D'AFFICHAGE</button>
+        </div>
+
+        <!-- 13 -->
+        <div class="cake-card">
+            <img src="fraisier.jpeg" alt="Fraisier classique">
+            <h3>Fraisier Classique</h3>
+            <p>— <span class="price">10 800 FCFA</span></p>
+            <button>OPTIONS D'AFFICHAGE</button>
+        </div>
+
+        <!-- 14 -->
+        <div class="cake-card">
+            <img src="mousse.jpeg" alt="Mousse au chocolat">
+            <h3>Mousse au Chocolat</h3>
+            <p>— <span class="price">10 152 FCFA</span></p>
+            <button>OPTIONS D'AFFICHAGE</button>
+        </div>
+
+        <!-- 15 -->
+        <div class="cake-card">
+            <img src="pistache.jpeg" alt="Gâteau Pistache Framboise">
+            <h3>Pistache Framboise</h3>
+            <p>— <span class="price">11 088 FCFA</span></p>
+            <button>OPTIONS D'AFFICHAGE</button>
+        </div>
+    </section>
+
+    <!-- JavaScript pour gérer le menu au scroll -->
+    <script>
+        const navMenu = document.querySelector('.nav-menu');
+        const mobileDropdown = document.getElementById('mobileDropdown');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                navMenu.style.display = 'none';
+                mobileDropdown.style.display = 'block';
+            } else {
+                navMenu.style.display = 'flex';
+                mobileDropdown.style.display = 'none';
+            }
+        });
+    </script>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="nos_gateaux.html">Nos Gâteaux</a></li>
+                    <li><a href="avis.html">Avis Clients</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-section">
+                <h3>Informations</h3>
+                <ul>
+                    <li><a href="conditions.html">Conditions générales</a></li>
+                    <li><a href="confidentialite.htm">Politique de confidentialité</a></li>
+                    <li><a href="mention.html">Mentions légales</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-section">
+                <h3>Suivez-nous</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="facebook.png" alt="Facebook" /></a>
+                    <a href="#"><img src="instagram.jpeg" alt="Instagram" /></a>
+                    <a href="#"><img src="twitter.png" alt="Twitter" /></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 Délices du coin. Tous droits réservés.
+        </div>
+    </footer>
+
+</body>
+
+</html>

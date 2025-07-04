@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact - Délices du coin</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="top-banner">
+        Livraison rapide et soignée 💌 — Nous sommes à votre écoute !
+    </div>
+
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="logo.png" alt="Délices du coin" />
+                <span>Délices du coin</span>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html">MAISON</a>
+                <a href="nos_gateaux.html">MENU</a>
+                <a href="avis.html">AVIS CLIENT</a>
+            </nav>
+            <div class="icons">
+                <a href="connexion.html" class="icon">👤</a>
+                <form action="recherche.html" method="get" class="search-form">
+                    <button type="submit" class="icon">🔍</button>
+                    <input type="text" name="q" class="search-input" placeholder="Rechercher..." />
+                </form>
+                <a href="panier.html" class="icon">🛒</a>
+            </div>
+        </div>
+        <!-- Menu compact mobile -->
+        <div class="mobile-dropdown" id="mobileDropdown">
+            <button class="dropdown-button">☰</button>
+            <div class="dropdown-content-mobile">
+                <a href="index.html">MAISON</a>
+                <a href="nos_gateaux.html">MENU</a>
+                <a href="avis.html">AVIS CLIENT</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="contact-main">
+        <section class="contact-section">
+            <h1>Contactez-nous</h1>
+            <p>Une question ? Un besoin de commande personnalisée ou non ? Laissez-nous un message !</p>
+            <form class="contact-form" action="envoyer.php" method="post">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required />
+
+                <label for="email">Adresse email :</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="sujet">Sujet :</label>
+                <input type="text" id="sujet" name="sujet" />
+
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+
+                <button type="submit">Envoyer le message</button>
+            </form>
+        </section>
+    </main>
+    <section class="contact-infos">
+        <h2 id="con">Nous contacter</h2>
+        <ul class="contact-list">
+            <li><strong>📞 Téléphone :</strong> <a href="tel:+242069194019">+242 06 919 40 19</a></li>
+            <li><strong>📧 Email :</strong> <a href="mailto:cleghysbalounga@gmail.com">contact@delicesducoin.com</a>
+            </li>
+            <li><strong>📍 Adresse :</strong> Brazzaville, République du Congo</li>
+            <li><strong>🕒 Horaires :</strong> Lundi – Samedi : 8h à 18h</li>
+        </ul>
+
+        <div class="social-contact">
+            <h3>Suivez-nous sur les réseaux sociaux</h3>
+            <div class="social-icons">
+                <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="instagram.jpeg" alt="Instagram"></a>
+                <a href="#"><img src="twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="whatsapp.jpeg" alt="WhatsApp"></a>
+            </div>
+        </div>
+    </section>
+    <!-- JavaScript pour gérer le menu au scroll -->
+    <script>
+        const navMenu = document.querySelector('.nav-menu');
+        const mobileDropdown = document.getElementById('mobileDropdown');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                navMenu.style.display = 'none';
+                mobileDropdown.style.display = 'block';
+            } else {
+                navMenu.style.display = 'flex';
+                mobileDropdown.style.display = 'none';
+            }
+        });
+    </script>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="nos_gateaux.html">Nos Gâteaux</a></li>
+                    <li><a href="avis.html">Avis Clients</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Informations</h3>
+                <ul>
+                    <li><a href="mention.html">Mentions légales</a></li>
+                    <li><a href="confidentialite.htm">Politique de confidentialité</a></li>
+                    <li><a href="conditions.html">Conditions générales</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Suivez-nous</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="facebook.png" alt="Facebook" /></a>
+                    <a href="#"><img src="instagram.jpeg" alt="Instagram" /></a>
+                    <a href="#"><img src="twitter.png" alt="Twitter" /></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 Délices du coin. Tous droits réservés.
+        </div>
+    </footer>
+</body>
+
+</html>
