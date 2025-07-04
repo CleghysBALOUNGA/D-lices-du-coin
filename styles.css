@@ -1082,4 +1082,90 @@ h2 {
       width: 100%;
     }
   }
+  /* -------- Responsive général tous écrans -------- */
+@media (max-width: 1200px) {
+    .header-container,
+    .main-content,
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer-column {
+      flex: 1 1 100%;
+      margin-bottom: 20px;
+    }
+  
+    .nav-menu {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .logo img {
+      height: 100px;
+    }
+  
+    .logo span {
+      font-size: 24px;
+    }
+  
+    .nav-menu a,
+    .dropdown-content a {
+      font-size: 14px;
+    }
+  
+    .cta-button,
+    .cake-card button {
+      font-size: 14px;
+      padding: 10px 16px;
+    }
+  
+    .cake-card {
+      width: 90%;
+    }
+  
+    .cakes-intro p {
+      font-size: 22px;
+      white-space: normal;
+    }
+  
+    .footer {
+      padding: 30px 15px;
+    }
+  
+    .footer-bottom {
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .search-form {
+      flex-direction: column;
+      width: 100%;
+      gap: 6px;
+    }
+  
+    .cakes-intro p {
+      font-size: 18px;
+    }
+  
+    .cake-card h3 {
+      font-size: 16px;
+    }
+  
+    .contact-section h1,
+    .avis-main h1 {
+      font-size: 24px;
+    }
+  
+    .dropdown-button {
+      font-size: 22px;
+      width: 40px;
+      height: 40px;
+    }
+  }
+  
   
